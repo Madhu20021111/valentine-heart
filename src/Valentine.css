@@ -1,0 +1,74 @@
+.valentine-screen {
+  background-color: #080808;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.heart-canvas {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mini-heart {
+  position: absolute;
+  filter: drop-shadow(0 0 5px #ff4d6d);
+  animation: glowPulse 2s infinite ease-in-out;
+  user-select: none;
+}
+
+.text-overlay {
+  position: absolute;
+  z-index: 100;
+  text-align: center;
+  color: white;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 25px;
+  border-radius: 50%;
+  backdrop-filter: blur(4px); /* This makes the text pop over the hearts */
+  pointer-events: none;
+}
+
+.text-overlay h1 {
+  font-family: 'Dancing Script', cursive;
+  font-size: 1.8rem;
+  margin: 0;
+  text-shadow: 0 0 20px #ff0000;
+}
+
+@keyframes glowPulse {
+  0%, 100% { scale: 1; opacity: 0.7; }
+  50% { scale: 1.2; opacity: 1; filter: drop-shadow(0 0 15px #ff4d6d); }
+}
+.typewriter {
+  font-family: 'Courier New', Courier, monospace; /* Classic typewriter font */
+  font-size: 1rem;
+  color: #fff;
+  text-shadow: 0 0 10px #ff4d6d;
+  margin: 0;
+}
+
+.cursor {
+  font-weight: bold;
+  color: #ff4d6d;
+  animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+/* Ensure the text overlay is centered over the heart particles */
+.text-overlay {
+  position: absolute;
+  z-index: 100;
+  text-align: center;
+  width: 50%; /* Give it space to grow */
+  pointer-events: none;
+}
