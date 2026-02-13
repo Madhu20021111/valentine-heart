@@ -18,7 +18,7 @@ const Valentine = () => {
   const [displayedText, setDisplayedText] = useState("");
   const [thumbsSwiper, setThumbsSwiper] = useState(null);
   
-  const fullMessage = "Happy Valentine's Day Sudu ❤️ Love you so much and Thank you for everything 🥹🥰"; 
+  const fullMessage = "Happy Valentine's Day Sudu ❤️ Love you so much and Thank you for everything 🥰"; 
 
   const couplePhotos = [
     photo1,photo2,photo3,photo4
