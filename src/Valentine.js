@@ -18,7 +18,7 @@ const Valentine = () => {
   const [displayedText, setDisplayedText] = useState("");
   const [thumbsSwiper, setThumbsSwiper] = useState(null);
   
-  const fullMessage = "Happy Valentine's Day! Sudu"; 
+  const fullMessage = "Happy Valentine's Day Sudu ❤️ Love you so much and Thank you for everything 🥹🥰"; 
 
   const couplePhotos = [
     photo1,photo2,photo3,photo4
@@ -48,10 +48,6 @@ const Valentine = () => {
 
   return (
     <div className="valentine-screen">
-      {/* <div className="code-background">
-        <pre><code>{`const Love = { from: "CIS_Undergrad", to: "My_Valentine", loop: true };`}</code></pre>
-      </div> */}
-
       {isRevealed && (
         <div className="gallery-wrapper">
           {/* Main Display Swiper */}
@@ -94,7 +90,7 @@ const Valentine = () => {
         {isRevealed && <div className="text-overlay"><h1 className="typewriter">{displayedText}<span className="cursor">|</span></h1></div>}
       </div>
 
-      {!isRevealed && <button className="reveal-btn" onClick={handleReveal}>Open</button>}
+      {!isRevealed && <button className="reveal-btn" onClick={handleReveal}>Love❤️</button>}
     </div>
   );
 };
