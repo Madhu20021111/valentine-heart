@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Thumbs, Autoplay, FreeMode } from 'swiper/modules';
-import photo1 from './components/images/poto1.jpeg';
-import photo2 from './components/images/poto2.jpg';
-import photo3 from './components/images/poto3.jpg';
-import photo4 from './components/images/poto4.jpg';
+// import photo1 from './components/images/poto1.jpeg';
+// import photo2 from './components/images/poto2.jpg';
+// import photo3 from './components/images/poto3.jpg';
+// import photo4 from './components/images/poto4.jpg';
 
 // Import Swiper styles
 import 'swiper/css';
@@ -19,10 +19,11 @@ const Valentine = () => {
   const [thumbsSwiper, setThumbsSwiper] = useState(null);
   
   const fullMessage = "Happy Valentine's Day Sudu ❤️ Love you so much and Thank you for everything 🥹🥰"; 
-
-  const couplePhotos = [
-    photo1,photo2,photo3,photo4
-  ];
+   
+  // import the photo here
+  // const couplePhotos = [
+  //   photo1,photo2,photo3,photo4
+  // ];
 
   useEffect(() => {
     const heartData = [];
@@ -59,9 +60,9 @@ const Valentine = () => {
             autoplay={{ delay: 2500, disableOnInteraction: false }}
             className="main-swiper"
           >
-            {couplePhotos.map((img, i) => (
-              <SwiperSlide key={i}><img src={img} alt="Us" /></SwiperSlide>
-            ))}
+            {/* {couplePhotos.map((img, i) => ( */}
+              {/* <SwiperSlide key={i}><img src={img} alt="Us" /></SwiperSlide> */}
+            {/* ))} */}
           </Swiper>
 
           {/* Vertical Thumbnails Swiper */}
@@ -76,9 +77,9 @@ const Valentine = () => {
             modules={[FreeMode, Thumbs]}
             className="thumbs-swiper"
           >
-            {couplePhotos.map((img, i) => (
+            {/* {couplePhotos.map((img, i) => (
               <SwiperSlide key={i}><img src={img} alt="Thumb" /></SwiperSlide>
-            ))}
+            ))} */}
           </Swiper>
         </div>
       )}
